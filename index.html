@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pattern Loop Assessment | Bee Right Communications</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0a0a0a; --card:#171512; --border:#2a2622;
+    --orange:#e08838; --purple:#8b5cf6; --grey:#9c9691; --white:#f5f2ee;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    background:var(--bg); color:var(--white); font-family:'Inter',sans-serif;
+    line-height:1.6; padding:60px 20px 100px;
+  }
+  .wrap{max-width:700px; margin:0 auto;}
+  .badge{
+    display:inline-block; border:1px solid var(--orange); color:var(--orange);
+    font-size:12px; letter-spacing:2px; padding:6px 14px; border-radius:3px;
+    text-transform:uppercase; margin-bottom:24px;
+  }
+  h1{
+    font-family:'Bebas Neue',sans-serif; font-size:56px; line-height:1.05;
+    letter-spacing:1px; text-transform:uppercase;
+  }
+  h1 .accent{color:var(--orange);}
+  .tm{font-size:12px; color:var(--grey); margin:4px 0 20px;}
+  .lede{color:var(--grey); font-size:19px; max-width:600px; margin-bottom:24px;}
+  .lede b{color:var(--white); font-weight:600;}
+  .divider{width:70px; height:3px; background:linear-gradient(90deg,var(--orange),var(--purple)); margin:24px 0;}
+  .body-text{color:var(--grey); font-size:17px; margin-bottom:16px;}
+  .body-text b{color:var(--white); font-weight:600;}
+  .bullets{margin:32px 0;}
+  .bullet{
+    background:#141210; border:1px solid var(--border); padding:18px 20px;
+    margin-bottom:10px; border-radius:6px; display:flex; align-items:center; gap:14px;
+  }
+  .bullet .arrow{color:var(--orange); font-size:18px;}
+  .note{color:var(--grey); text-align:center; margin:28px 0 16px; font-size:15px;}
+  .btn{
+    display:block; width:100%; background:var(--orange); color:#0a0a0a;
+    border:none; padding:20px; font-size:16px; font-weight:700; letter-spacing:1px;
+    text-transform:uppercase; border-radius:4px; cursor:pointer; text-align:center;
+  }
+  .btn:hover{background:#c97428;}
+  .btn-secondary{background:transparent; border:1px solid var(--border); color:var(--white);}
+  .btn-row{display:flex; gap:12px;}
+  .btn-row .btn{flex:1;}
+  footer{text-align:center; color:var(--grey); font-size:13px; margin-top:60px;}
+  .hidden{display:none !important;}
+  .progress-row{display:flex; justify-content:space-between; color:var(--grey); font-size:13px; margin-bottom:8px; letter-spacing:1px; text-transform:uppercase;}
+  .progress-bar{height:4px; background:var(--border); border-radius:2px; margin-bottom:32px; overflow:hidden;}
+  .progress-fill{height:100%; background:linear-gradient(90deg,var(--purple),var(--orange)); transition:width .3s;}
+  .card{background:var(--card); border:1px solid var(--border); border-radius:8px; padding:32px;}
+  .q-label{color:var(--orange); font-size:12px; letter-spacing:2px; text-transform:uppercase; margin-bottom:10px;}
+  .q-title{font-size:24px; font-weight:700; margin-bottom:12px;}
+  .q-hint{color:var(--grey); font-style:italic; font-size:15px; margin-bottom:20px;}
+  textarea, input[type=text], input[type=email]{
+    width:100%; background:#0d0b09; border:1px solid var(--border); color:var(--white);
+    padding:16px; font-family:'Inter',sans-serif; font-size:15px; border-radius:4px;
+  }
+  textarea{min-height:110px; resize:vertical;}
+  .check-list label{
+    display:flex; align-items:center; gap:12px; background:#0d0b09; border:1px solid var(--border);
+    padding:16px; border-radius:4px; margin-bottom:10px; cursor:pointer; font-size:15px;
+  }
+  .check-list input{width:18px; height:18px;}
+  .actions{margin-top:24px;}
+  .results-intro{border-top:1px solid var(--border); margin-top:28px; padding-top:24px;}
+  .results-intro h3{color:var(--orange); font-size:12px; letter-spacing:2px; text-transform:uppercase; margin-bottom:8px;}
+  .field-label{font-size:12px; letter-spacing:1px; text-transform:uppercase; color:var(--grey); margin:14px 0 6px;}
+  .thanks{text-align:center; padding:40px 20px;}
+  .thanks h2{font-family:'Bebas Neue',sans-serif; font-size:38px; color:var(--orange); margin-bottom:14px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div id="intro">
+    <div class="badge">Bee Right Communications</div>
+    <h1>Pattern Loop<br><span class="accent">Assessment</span></h1>
+    <div class="tm">TM</div>
+    <p class="lede"><b>Seven questions</b> to identify where your loop starts &mdash; and what's keeping it running.</p>
+    <div class="divider"></div>
+    <p class="body-text">Most people understand their patterns. They know they overthink, they know they react the same way, they know anxiety is affecting their life.</p>
+    <p class="body-text">Understanding isn't the problem. <b>Seeing exactly where the loop is maintained</b> &mdash; that's where change starts.</p>
+    <div class="bullets">
+      <div class="bullet"><span class="arrow">&rarr;</span> Identify the trigger keeping your pattern locked in</div>
+      <div class="bullet"><span class="arrow">&rarr;</span> Expose the story you tell yourself that maintains it</div>
+      <div class="bullet"><span class="arrow">&rarr;</span> See the loop structure clearly &mdash; probably for the first time</div>
+    </div>
+    <p class="note">Takes around 4 minutes. No fluff.</p>
+    <button class="btn" onclick="startQuiz()">Start The Assessment</button>
+  </div>
+
+  <div id="quiz" class="hidden">
+    <div class="progress-row"><span id="qcounter">Question 1 of 7</span><span id="qpercent">0%</span></div>
+    <div class="progress-bar"><div class="progress-fill" id="pfill" style="width:0%"></div></div>
+    <div class="card" id="qcard"></div>
+  </div>
+
+  <div id="thanks" class="hidden thanks">
+    <h2>You're All Set</h2>
+    <p class="body-text">Check your inbox &mdash; your Pattern Loop breakdown is on its way.</p>
+  </div>
+
+  <footer>Bee Right Communications &middot; Matt Bright &middot; Geelong, Victoria<br>Strategic Psychotherapy &amp; Clinical Hypnosis</footer>
+</div>
+
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+
+<script>
+const questions = [
+  {key:'q1', label:'Question 01 - The Pattern', title:'What pattern do you keep noticing in yourself?', hint:"The thing you keep doing even though you know it's not helping you. Don't overthink this - your first answer is usually the right one.", type:'text', placeholder:"e.g. I overthink every decision, I always pull back when things get good, I can't switch my mind off at night..."},
+  {key:'q2', label:'Question 02 - The Meaning', title:'When that pattern shows up, what do you make it mean about yourself?', hint:'This is the story that runs underneath the behaviour. It often sounds like a conclusion about who you are.', type:'text', placeholder:"e.g. That I'm not good enough, that I'll always be this way, that something is wrong with me..."},
+  {key:'q3', label:'Question 03 - The Trigger', title:'What usually sets the pattern off?', hint:'Select everything that applies.', type:'checkbox', options:['A feeling or emotion',"A thought I can't stop","Another person's behaviour",'Uncertainty or not knowing what comes next','Conflict or tension','Pressure or high stakes','Failure or setback',"I'm not sure - it just happens"]},
+  {key:'q4', label:'Question 04 - The Response', title:'When the pattern kicks in, what do you do next?', hint:"This is what happens automatically - before you've had time to choose differently. Be honest here, even if it's uncomfortable.", type:'text', placeholder:'e.g. I withdraw, I overthink it for hours, I seek reassurance from others, I avoid the situation completely...'},
+  {key:'q5', label:'Question 05 - The Payoff', title:'What are you trying to gain - or avoid - when you do that?', hint:'Patterns always serve a purpose. Even the unhelpful ones. What does this response give you, or protect you from?', type:'text', placeholder:'e.g. Safety, certainty, approval, relief, comfort, avoiding failure, avoiding rejection...'},
+  {key:'q6', label:'Question 06 - The Control', title:'What part of this situation is actually within your control?', hint:'Most people either take responsibility for everything - or nothing. This question helps locate where your real power is.', type:'text', placeholder:"e.g. How I respond, what I focus on, what I tell myself, whether I ask for help..."},
+  {key:'q7', label:'Question 07 - The Other Side', title:'If this pattern disappeared tomorrow, what would actually be different?', hint:"Not less anxiety - what specifically would you do, feel, or have that you don't have now?", type:'text', placeholder:"e.g. I'd trust my own decisions, I'd stop second-guessing everything, I'd sleep..."}
+];
+let current = 0;
+const answers = {};
+
+function startQuiz(){
+  document.getElementById('intro').classList.add('hidden');
+  document.getElementById('quiz').classList.remove('hidden');
+  renderQuestion();
+}
+
+function renderQuestion(){
+  const q = questions[current];
+  const pct = Math.round((current/7)*100);
+  document.getElementById('qcounter').textContent = 'Question ' + (current+1) + ' of 7';
+  document.getElementById('qpercent').textContent = pct + '%';
+  document.getElementById('pfill').style.width = pct + '%';
+
+  let fieldHtml = '';
+  if(q.type === 'text'){
+    const val = answers[q.key] || '';
+    fieldHtml = '<textarea id="qfield" placeholder="' + q.placeholder + '">' + val + '</textarea>';
+  } else if(q.type === 'checkbox'){
+    const selected = answers[q.key] || [];
+    fieldHtml = '<div class="check-list">' + q.options.map(function(opt){
+      const checked = selected.indexOf(opt) > -1 ? 'checked' : '';
+      const safeOpt = opt.replace(/'/g, "\\'");
+      return '<label><input type="checkbox" value="' + opt + '" ' + checked + ' onchange="toggleCheck(\'' + q.key + '\',\'' + safeOpt + '\')">' + opt + '</label>';
+    }).join('') + '</div>';
+  }
+
+  const isLast = current === questions.length - 1;
+  let resultsHtml = '';
+  if(isLast){
+    resultsHtml = '<div class="results-intro"><h3>Your Results</h3><p class="body-text">Where do I send your Pattern Loop breakdown?</p>' +
+      '<div class="field-label">First Name</div><input type="text" id="fname" placeholder="Your first name">' +
+      '<div class="field-label">Email Address</div><input type="email" id="femail" placeholder="your@email.com"></div>';
+  }
+
+  document.getElementById('qcard').innerHTML =
+    '<div class="q-label">' + q.label + '</div>' +
+    '<div class="q-title">' + q.title + '</div>' +
+    '<div class="q-hint">' + q.hint + '</div>' +
+    fieldHtml + resultsHtml +
+    '<div class="actions btn-row">' +
+      (current > 0 ? '<button class="btn btn-secondary" onclick="prevQuestion()">Back</button>' : '') +
+      '<button class="btn" onclick="' + (isLast ? 'submitAssessment()' : 'nextQuestion()') + '">' + (isLast ? 'Get My Results' : 'Next') + '</button>' +
+    '</div>';
+}
+
+function toggleCheck(key, opt){
+  if(!answers[key]) answers[key] = [];
+  const idx = answers[key].indexOf(opt);
+  if(idx > -1){ answers[key].splice(idx,1); } else { answers[key].push(opt); }
+}
+
+function saveCurrentAnswer(){
+  const q = questions[current];
+  if(q.type === 'text'){
+    const el = document.getElementById('qfield');
+    if(el) answers[q.key] = el.value;
+  }
+}
+
+function nextQuestion(){
+  saveCurrentAnswer();
+  current++;
+  renderQuestion();
+}
+
+function prevQuestion(){
+  saveCurrentAnswer();
+  current--;
+  renderQuestion();
+}
+
+function submitAssessment(){
+  saveCurrentAnswer();
+  const fname = document.getElementById('fname').value.trim();
+  const femail = document.getElementById('femail').value.trim();
+  if(!femail){ alert('Please enter your email so we can send your results.'); return; }
+
+  const form = document.createElement('form');
+  form.action = 'https://beerightcommunications.us12.list-manage.com/subscribe/post?u=9f015ec214ee85fe71fddda25&id=0011bbe0f0';
+  form.method = 'POST';
+  form.target = 'hidden_iframe';
+  form.style.display = 'none';
+
+  const fields = {
+    'EMAIL': femail,
+    'FNAME': fname,
+    'b_9f015ec214ee85fe71fddda25_2c33ba9a2f': ''
+  };
+  Object.keys(fields).forEach(function(name){
+    const input = document.createElement('input');
+    input.type = 'hidden';
+    input.name = name;
+    input.value = fields[name];
+    form.appendChild(input);
+  });
+
+  document.body.appendChild(form);
+  form.submit();
+
+  document.getElementById('quiz').classList.add('hidden');
+  document.getElementById('thanks').classList.remove('hidden');
+}
+</script>
+</body>
+</html>
